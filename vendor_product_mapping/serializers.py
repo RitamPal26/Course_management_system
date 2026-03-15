@@ -21,7 +21,7 @@ class VendorProductMappingSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         """
-        Object-level validation to ensure only one primary mapping per vendor[cite: 70, 75].
+        Object-level validation to ensure only one primary mapping per vendor.
         """
         primary_mapping = data.get('primary_mapping')
         vendor = data.get('vendor')

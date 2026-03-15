@@ -15,7 +15,7 @@ class CourseCertificationMappingSerializer(serializers.ModelSerializer):
             UniqueTogetherValidator(
                 queryset=CourseCertificationMapping.objects.all(),
                 fields=['course', 'certification'],
-                message="This course and certification pair already exists." [cite: 74]
+                message="This course and certification pair already exists."
             )
         ]
 

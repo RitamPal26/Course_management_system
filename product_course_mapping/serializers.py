@@ -15,7 +15,7 @@ class ProductCourseMappingSerializer(serializers.ModelSerializer):
             UniqueTogetherValidator(
                 queryset=ProductCourseMapping.objects.all(),
                 fields=['product', 'course'],
-                message="This product and course pair already exists." [cite: 73]
+                message="This product and course pair already exists."
             )
         ]
 
