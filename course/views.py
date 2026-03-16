@@ -8,7 +8,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 class CourseListCreateAPIView(APIView, APIViewMixin):
     """
-    List all courses or create a new course [cite: 106-107].
+    List all courses or create a new course.
     """
     @swagger_auto_schema(responses={200: CourseSerializer(many=True)})
     def get(self, request):
@@ -26,7 +26,7 @@ class CourseListCreateAPIView(APIView, APIViewMixin):
 
 class CourseDetailAPIView(APIView, APIViewMixin):
     """
-    Retrieve, update or delete a course instance [cite: 108-111].
+    Retrieve, update or delete a course instance.
     """
     @swagger_auto_schema(responses={200: CourseSerializer()})
     def get(self, request, pk):

@@ -8,7 +8,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 class CertificationListCreateAPIView(APIView, APIViewMixin):
     """
-    List all certifications or create a new certification [cite: 113-114].
+    List all certifications or create a new certification [: 113-114].
     """
     @swagger_auto_schema(responses={200: CertificationSerializer(many=True)})
     def get(self, request):
@@ -26,7 +26,7 @@ class CertificationListCreateAPIView(APIView, APIViewMixin):
 
 class CertificationDetailAPIView(APIView, APIViewMixin):
     """
-    Retrieve, update or delete a certification instance [cite: 115-118].
+    Retrieve, update or delete a certification instance.
     """
     @swagger_auto_schema(responses={200: CertificationSerializer()})
     def get(self, request, pk):

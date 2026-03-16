@@ -8,7 +8,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 class ProductListCreateAPIView(APIView, APIViewMixin):
     """
-    List all products or create a new product [cite: 80, 99-100].
+    List all products or create a new product.
     """
     @swagger_auto_schema(responses={200: ProductSerializer(many=True)})
     def get(self, request):
@@ -26,7 +26,7 @@ class ProductListCreateAPIView(APIView, APIViewMixin):
 
 class ProductDetailAPIView(APIView, APIViewMixin):
     """
-    Retrieve, update or delete a product instance [cite: 81, 101-104].
+    Retrieve, update or delete a product instance.
     """
     @swagger_auto_schema(responses={200: ProductSerializer()})
     def get(self, request, pk):

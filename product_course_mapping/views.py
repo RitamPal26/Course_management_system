@@ -10,7 +10,7 @@ from .serializers import ProductCourseMappingSerializer
 class ProductCourseMappingListCreateAPIView(APIView, APIViewMixin):
     """
     List or Create Product-Course Mappings.
-    Supports filtering by product_id[cite: 160].
+    Supports filtering by product_id.
     """
     product_id_param = openapi.Parameter(
         'product_id', openapi.IN_QUERY, 

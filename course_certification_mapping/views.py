@@ -10,7 +10,7 @@ from .serializers import CourseCertificationMappingSerializer
 class CourseCertificationMappingListCreateAPIView(APIView, APIViewMixin):
     """
     List or Create Course-Certification Mappings.
-    Supports filtering by course_id[cite: 161].
+    Supports filtering by course_id.
     """
     course_id_param = openapi.Parameter(
         'course_id', openapi.IN_QUERY, 
